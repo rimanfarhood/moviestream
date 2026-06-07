@@ -12,7 +12,7 @@ using MovieStream.Models;
 
 namespace MovieStream.Controllers
 {
-    [Route("[controller]")]
+    // [Route("[controller]")]
     public class MovieController : Controller
     {
         private readonly MovieContext _context;
@@ -21,9 +21,9 @@ namespace MovieStream.Controllers
         {
             _context = context;
         }
-        [HttpGet("movie")]
+        // [HttpGet("movie")]
 
-        [HttpGet("index")]
+        // [HttpGet("index")]
         public async Task<IActionResult> Index(string searchString)
         {
             Console.WriteLine($"Search String: {searchString}");
