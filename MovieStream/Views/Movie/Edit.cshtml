@@ -1,0 +1,48 @@
+@model MovieStream.Models.Movie
+
+<h1>Edit Movie</h1>
+
+<form asp-action="Edit" method="post">
+
+    <input type="hidden" asp-for="Id" />
+
+    <div>
+        <label asp-for="Title"></label>
+        <input asp-for="Title" />
+    </div>
+
+    <div>
+        <label asp-for="Genere"></label>
+        <input asp-for="Genere" />
+    </div>
+
+    <div>
+        <label asp-for="ReleaseYear"></label>
+        <input asp-for="ReleaseYear" />
+    </div>
+
+    <div>
+        <label asp-for="Rating"></label>
+        <input asp-for="Rating" />
+    </div>
+
+    <div>
+        <label asp-for="Duration"></label>
+        <input asp-for="Duration" />
+    </div>
+
+    <div>
+        <label asp-for="PosterUrl"></label>
+        <input asp-for="PosterUrl" />
+    </div>
+
+    <div>
+        <label asp-for="Description"></label>
+        <textarea asp-for="Description"></textarea>
+    </div>
+
+    <button type="submit">Save Changes</button>
+
+</form>
+
+<a asp-action="Index">Back to List</a>

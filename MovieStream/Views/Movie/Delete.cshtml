@@ -1,0 +1,30 @@
+@model MovieStream.Models.Movie
+
+<h1>Delete Movie</h1>
+
+<h3>Are you sure you want to delete this movie?</h3>
+
+<div>
+    <h4>@Model.Title</h4>
+
+    <img src="@Model.PosterUrl"
+         width="150"
+         alt="@Model.Title" />
+
+    <p>@Model.Genere</p>
+    <p>@Model.ReleaseYear</p>
+</div>
+
+<form asp-action="Delete" method="post">
+
+    <input type="hidden" asp-for="Id" />
+
+    <button type="submit">
+        Delete
+    </button>
+
+</form>
+
+<a asp-action="Index">
+    Cancel
+</a>

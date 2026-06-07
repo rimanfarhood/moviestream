@@ -1,0 +1,16 @@
+@model MovieStream.Models.Movie
+
+<form asp-action="Create" method="post">
+
+    <input asp-for="Title" placeholder="Title" />
+    <input asp-for="Genere" placeholder="Genre" />
+    <input asp-for="ReleaseYear" placeholder="Year" />
+    <input asp-for="Rating" placeholder="Rating" />
+    <input asp-for="Duration" placeholder="Duration" />
+    <input asp-for="PosterUrl" placeholder="Poster" />
+
+    <textarea asp-for="Description"></textarea>
+
+    <button type="submit">Save</button>
+
+</form>
